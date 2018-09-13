@@ -60,7 +60,7 @@ es:
           marketplace_order_approval_confirmation: Se le enviará una notificación por correo electrónico a cada proveedor. ¿Desea continuar?
       suppliers:
         edit:
-          back_to_suppliers: Regresar a los proveedores 
+          back_to_suppliers: Regresar a los proveedores
         new:
           new_supplier: Nuevo Proveedor
         form:

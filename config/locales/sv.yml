@@ -1,0 +1,140 @@
+sv:
+  activerecord:
+    attributes:
+      spree/supplier:
+        commission_flat_rate: Provision fastpris
+        commission_percentage: Provision procent
+        name: Namn
+        tax_id: Momsnummer
+        url: URL
+        address1: Address
+        address2: Address2
+        city: City
+        commission: Provision
+        country: Land
+        email: Epost
+        state: Stat
+        active: Aktiv
+        url: URL
+        zipcode: Postkod
+        supplier_info: Leverantörsinformation
+        supplier_signup: Leverantörsregistrering
+        suppliers: Leverantörer
+      spree/shipment:
+        created_at: Skapad
+        number: Nummer
+        state: Län
+        item_cost: Kostnad vara
+        cost: Kostnad
+        total_tax: Total skatt
+        final_price: Slutpris
+        supplier_commission: Leverantörsprovision
+    errors:
+      models:
+        spree/supplier:
+          attributes:
+            url:
+              invalid: är ej giltig. Se till att inkludera 'http://
+              not_responding: 'är ej giltig, svarar ej eller redirectar till en annan plats'
+  marketplace_order_number: "Marketplace ordernummer #%{number}"
+  marketplace_orders: Marketplace ordrar
+  marketplace_settings: Marketplace inställningar
+  must_be_logged_in: 'Måste vara inloggad'
+  signup: Registrering
+  signup_to_become_a_supplier: 'Skapa konto för att bli en leverantör'
+  spree:
+    admin:
+      tab:
+        stock_locations: Lagerplatser
+        suppliers: Leverantörer
+        shipments: Leveranser
+        profile: Profil
+        earnings: Resultat
+      marketplace_settings:
+        update:
+          success: Tack för registeringen
+      orders:
+        marketplace_order_order_header:
+          marketplace_order_ids: Market IDs
+        edit:
+          approve_marketplace_orders: Godkänn marketplace ordrar
+          resend_marketplace_orders: Skicka marketplace ordrar igen
+          marketplace_order_approval_confirmation: Detta kommer skicka ett epostmeddelande till leverantören. Vill du fortsätta?
+        show:
+          approve_marketplace_orders: Godkänn marketplace ordrar
+          resend_marketplace_orders: Skicka marketplace ordrar igen
+          marketplace_order_approval_confirmation: Detta kommer skicka ett epostmeddelande till leverantören. Vill du fortsätta?
+      suppliers:
+        edit:
+          back_to_suppliers: Tillbaka till leverantörer
+        new:
+          new_supplier: Ny leverantör
+        form:
+          supplier_details: Leverantörsdetaljer
+          supplier_address: Leverantörsadress
+      marketplace_orders:
+        deliver:
+          error: "Order %{number} kunde inte skickas till leverantören."
+          success: "Order %{number} skickades till leverantören."
+        orders_sent: Alla beställningar skickades till leverantörer
+        orders_not_sent: Vissa eller alla beställningar kunde inte skickas. Kontakta leverantören direkt.
+    back_to_orders_list: Återgå till beställningarna
+    back_to_suppliers: Återgå till beställningarna
+    business: Affär
+    cancel: Avbryt
+    company_info: Företagsinformation
+    confirm_order: Godkänn order
+    contact_address: Kontaktadress
+    drop_ship: Drop Ship
+    editing_supplier: Redigera leverantör
+    default_commission_flat_rate: Förhandsvald provision fastpris
+    default_commission_percentage: Förhandsvald provision procent
+    automatically_deliver_orders_to_supplier: Skicka beställningen automatiskt till leverantörer
+    send_supplier_email: Skicka mail till leverantören
+    individual: Individuell
+    listing_suppliers: Lista leverantörer
+    manage: Hantera
+    name: Namn
+    or: eller
+    suppliers: Proveedores
+    listing_shipments: 'Lista de envíos'
+    order_state:
+      active: Aktiv
+      completed: Avslutad
+      confirmed: Bekräftad
+      delivered: Levererad
+    resend_order_to_supplier: Återskicka order till leverantören.
+    save: Spara
+    search: Sök
+    send_order_to_supplier: Skicka beställning till leverantören.
+    show_only_incomplete_orders: Visa endast ofullständiga beställningar
+    supplier: Leverantör
+    supplier_information: Leverantörsinformation
+    marketplace_order_mailer:
+      supplier_order:
+        hello: "Hej %{name},"
+        subject: "%{name} Marketplace Order #%{number}"
+        thank_you_again: "Tack för en bra affär!</b>"
+    shared:
+      unauthorized:
+        explained: Du har inte behörighet att komma åt den här sidan.
+        unauthorized: Ingen behörighet
+    supplier_mailer:
+      welcome:
+        hello: "Hej %{name},"
+        check_your_status: Du kan kontrollera status för din beställning på
+        logging_into_your_account: logga in på ditt konto.
+        once_your_request_is_approved: Una vez que su pedido sea aprobado podrá gestionar su inventario.
+        subject: 'Tack för din registrering. Vänligen kontrollera dina uppgifter'
+        thank_you_again: "Tack så mycket, <b>%{name}</b>"
+        thank_you_for_signing_up: Tack för att du vill vara en leverantör.
+    suppliers:
+      already_signed_up: "Du är redan registrerad som leverantör"
+      create:
+        invalid_password: Felaktigt lösenord
+        success: Tack för att du registrerar dig
+    supplier_registration:
+      already_signed_up: "Du är redan registrerad som leverantör"
+      create:
+        invalid_password: Felaktigt lösenord
+        success: Tack för att du registrerar dig
