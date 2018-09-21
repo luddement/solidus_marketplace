@@ -86,6 +86,7 @@ sv:
     confirm_order: Godkänn order
     contact_address: Kontaktadress
     drop_ship: Drop Ship
+    earnings: Intjäning
     editing_supplier: Redigera leverantör
     default_commission_flat_rate: Förhandsvald provision fastpris
     default_commission_percentage: Förhandsvald provision procent
@@ -96,8 +97,8 @@ sv:
     manage: Hantera
     name: Namn
     or: eller
-    suppliers: Proveedores
-    listing_shipments: 'Lista de envíos'
+    suppliers: Leverantörer
+    listing_shipments: 'Lista leverantörer'
     order_state:
       active: Aktiv
       completed: Avslutad
@@ -109,6 +110,8 @@ sv:
     send_order_to_supplier: Skicka beställning till leverantören.
     show_only_incomplete_orders: Visa endast ofullständiga beställningar
     supplier: Leverantör
+    supplier_earnings: Leverantörsintjäning
+    supplier_email: Epost
     supplier_information: Leverantörsinformation
     marketplace_order_mailer:
       supplier_order:
