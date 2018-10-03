@@ -38,7 +38,6 @@ sv:
               not_responding: 'är ej giltig, svarar ej eller redirectar till en annan plats'
   marketplace_order_number: "Marketplace ordernummer #%{number}"
   marketplace_orders: Marketplace ordrar
-  marketplace_settings: Marketplace inställningar
   must_be_logged_in: 'Måste vara inloggad'
   signup: Registrering
   signup_to_become_a_supplier: 'Skapa konto för att bli en leverantör'
@@ -87,6 +86,11 @@ sv:
     contact_address: Kontaktadress
     drop_ship: Drop Ship
     earnings: Intjäning
+    earnings_description: Intjäning för leverantörer över en period
+    missing_suppliers: Produkter utan leverantör
+    missing_suppliers_description: Produkter som saknar leverantör
+    link: Länk
+    admin_link: Admin länk
     editing_supplier: Redigera leverantör
     default_commission_flat_rate: Förhandsvald provision fastpris
     default_commission_percentage: Förhandsvald provision procent
@@ -113,6 +117,7 @@ sv:
     supplier_earnings: Leverantörsintjäning
     supplier_email: Epost
     supplier_information: Leverantörsinformation
+    marketplace_settings: Marketplace inställningar
     marketplace_order_mailer:
       supplier_order:
         hello: "Hej %{name},"

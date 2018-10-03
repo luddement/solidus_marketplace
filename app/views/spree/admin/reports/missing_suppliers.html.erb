@@ -1,0 +1,24 @@
+<% admin_breadcrumb(link_to t('spree.reports'), spree.admin_reports_path) %>
+<% admin_breadcrumb(t('spree.missing_suppliers')) %>
+
+<% content_for :page_actions do %>
+<% end %>
+
+<table class="admin-report" data-hook="missing_suppliers">
+  <thead>
+    <tr>
+      <th><%= t('spree.name') %></th>
+      <th><%= t('spree.link') %></th>
+      <th><%= t('spree.admin_link') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= link_to product.name, product %></td>
+        <td><%= link_to product.name, [ :admin, product] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -8,6 +8,8 @@ Spree::Core::Engine.routes.draw do
       collection do
         get   :earnings
         post  :earnings
+        get :missing_suppliers
+        post :missing_suppliers
       end
     end
   end

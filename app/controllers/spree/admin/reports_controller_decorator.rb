@@ -25,6 +25,14 @@ Spree::Admin::ReportsController.class_eval do
     end
   end
 
+  def missing_suppliers
+    @products = Spree::Product.includes(:suppliers).where(spree_suppliers: { id: nil })
+    respond_to do |format|
+      format.html
+      format.csv { send_data earnings_csv }
+    end
+  end
+
   private
 
   def add_marketplace_reports
@@ -34,7 +42,7 @@ Spree::Admin::ReportsController.class_eval do
   end
 
   def marketplace_reports
-    [:earnings]
+    [:earnings, :missing_suppliers]
   end
 
   def get_supplier_earnings
