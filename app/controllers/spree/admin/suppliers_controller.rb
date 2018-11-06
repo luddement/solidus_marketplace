@@ -1,7 +1,10 @@
 class Spree::Admin::SuppliersController < Spree::Admin::ResourceController
 
   def update
-    @object.address = Spree::Address.immutable_merge(@object.address, permitted_resource_params[:address_attributes])
+    address_attributes = [ :firstname, :lastname, :address1, :city, :zipcode, :phone ]
+    if address_attributes.any? { |attribute| permitted_resource_params[:address_attributes][attribute].present? }
+      @object.address = Spree::Address.immutable_merge(@object.address, permitted_resource_params[:address_attributes])
+    end
 
     if @object.update_attributes(permitted_resource_params.except(:address_attributes))
       respond_with(@object) do |format|
